@@ -17,7 +17,7 @@ class MainActivity : AppCompatActivity() {
 //        val etInput = viewBinding.etInput.text.toString() -> 위치 주의.
 
         viewBinding.btnNext.setOnClickListener {
-            val intent = Intent(this, SecondActivity::class.java)
+            val intent = Intent(this, SecondActivity::class.java) // 단위가 1. SecondActivity(참조) 2. ::class(참조) 3. .java(반환타입)
             val etInput = viewBinding.etInput.text.toString()
             intent.putExtra("text", etInput)
             startActivity(intent)

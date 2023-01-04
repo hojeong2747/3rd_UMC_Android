@@ -9,11 +9,11 @@ import umc_android.week03.standardmission.databinding.FragmentFirstBinding
 
 class FirstFragment: Fragment() {
     private lateinit var viewBinding: FragmentFirstBinding
-    override fun onCreateView(
+    override fun onCreateView( // onCreateView() 메소드 : 3개의 매개변수를 갖고, View 객체를 반환함.
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View {
+    ): View { // View 객체는 fragment 객체의 상위 객체.
         viewBinding = FragmentFirstBinding.inflate(layoutInflater)
         return viewBinding.root
     }
